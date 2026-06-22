@@ -237,6 +237,16 @@
     transition: border-color 0.2s, background 0.2s, color 0.2s;
   }
   .proj-link:hover { background: var(--text); color: #fff; border-color: var(--text); }
+  .project-img {
+    width: 100%; margin-top: 1.5rem;
+    border-radius: 10px; border: 1px solid var(--border);
+    overflow: hidden; display: block;
+  }
+  .project-img img {
+    width: 100%; display: block;
+    transition: transform 0.4s ease;
+  }
+  .project-card:hover .project-img img { transform: scale(1.02); }
 
   /* CONTACT */
   #contact { background: var(--text); color: #fff; }
@@ -471,12 +481,15 @@
           <span class="p-tag">NumPy</span>
         </div>
         <div class="project-name">Restaurant Operations Intelligence System</div>
-        <p class="project-about">End-to-end analytics project built around real fast food restaurant operations. Generating 12 months of realistic shift data in Python using real operational benchmarks — 8 daily shifts, seasonal weather patterns, public holiday multipliers, and business seasons. Building a star schema database and interactive Power BI dashboard for store managers. All base figures derived from hands-on experience as Assistant Manager at McDonald's Canada.</p>
+        <p class="project-about">End-to-end analytics project built around real fast food restaurant operations. Generated 12 months of realistic shift data in Python using real operational benchmarks — 8 daily shifts, seasonal weather patterns, public holiday multipliers, and business seasons. Built a star schema database, 27+ DAX measures, and a 3-page interactive Power BI dashboard covering Sales, Labour, and Waste intelligence. All base figures derived from hands-on experience as Assistant Manager at McDonald's Canada.</p>
+        <div class="project-img">
+          <img src="Sales_Dashboard.png" alt="Restaurant Operations Intelligence System — Power BI Dashboard" loading="lazy">
+        </div>
       </div>
       <div class="project-bottom">
         <div class="project-kpi">
-          <strong>🚧 In Progress</strong>
-          Star Schema · 8 Shifts · 2,928 Rows
+          <strong>✅ Complete</strong>
+          3 Dashboards · 27+ DAX Measures · 2,928 Rows
         </div>
         <a href="https://github.com/sooraj-L/restaurant-ops-intelligence" class="proj-link" target="_blank">GitHub →</a>
       </div>
